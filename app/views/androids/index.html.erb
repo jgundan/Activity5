@@ -1,0 +1,46 @@
+<h1>Android</h1>
+
+
+<table>
+
+	<thead>
+
+	<tr>
+
+	<th>Name </th>
+	<th>Brand</th>
+	<th>Year_release</th>
+	<th>Camera</th>
+	<th>Mpixels</th>
+	<th>Internal_storage</th>
+	<th>Numberof_slots</th>
+	<th>Sizeof_screen</th>
+	<th>Operating_system</th>
+	<th>Numberof_stock</th>
+
+	</tr>
+
+	<thead>
+
+	<tbody>
+
+	<% @androids.each do |android| %>
+	 <tr>
+	<td><%= android.name %></td>
+	<td><%= android.brand%></td>
+	<td><%= android.year_release%></td>
+	<td><%= android.camera%></td>
+	<td><%= android.mpixels%></td>
+	<td><%= android.internal_storage%></th>
+	<td><%= android.numberof_slots%></th>
+	<td><%= android.sizeof_screen%></th>
+	<td><%= android.operating_system%></th>
+	<td><%= android.numberof_stock%></th>
+		<td><%= link_to 'View',android%>%</td>
+	</tr>
+		 end
+	</tbody>
+	</table>
+
+
+
